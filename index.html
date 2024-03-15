@@ -10,22 +10,21 @@
 
 </head>
 <body>
-    <nav>
-        <div class="logo">Cloud club</div>
-        
-        <ul>
-            <a href="./index.html">Home</a>
-            <a href="./events.html">Events</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-        </ul>
-        <div class="menu">
-            <li class="fa-solid fa-bars" id="menu-icon"></li>
-            <li class="fa-solid fa-x" id="close-icon"></li>
-        </div>
-    </nav>
+    <header class="header">
+        <div class="logo">Cloud</div>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i  class="fa-solid fa-bars" id="menu-icon"></i>
+            <i  class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="./index.html"style="--i:0">Home</a>
+            <a href="./about.html"style="--i:1">About</a>
+            <a href="./contact.html"style="--i:2">Contact</a>
+            <a href="./events.html"style="--i:3">Events</a>
+        </nav>
+    </header>
     <div class="container">
-
     </div>
     <footer><p>© 2024 Cloud club AU. All rights are resrved.</p></footer>
     <script src="./js/index.js"></script>
