@@ -1,86 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins" , Sans-serif;
-}
-
-body{
-    min-height: 100vh;
-    background-color: #000;
-    color: #fff;
-}
-
-/*** ******************
-    Navigation bar 
-******************* ***/
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255,255,255,.1);
-    backdrop-filter: blur(50px);
-    z-index: 5;
-}
-
-.logo{
-    font-size: 28px;
-    font-weight: 700;
-    margin: 20px;
-}
-
-.navbar a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin: 30px;
-}
-
-#check{
-    display: none;
-}
-
-.icons{
-    position: absolute;
-    right: 5%;
-    font-size: 20px;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-/*** ******************
-    Main Body code
-******************* ***/
-.container{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 50px;
-}
 
 
 /*** ******************
-        FOOTER
+        UPCOMING EVENTS
 ******************* ***/
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
+.upcoming-event {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-footer p{
-    font-size: 12px
+.upcoming-event p{
+    width: 85%;
+    margin: 0 0 20px 15%;
+    font-size: 30px;
 }
+
+.slide-show {
+    width: 60%;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    position: relative; 
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.slide {
+    width: 100%;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;  */
+    position: absolute; 
+    top: 0;
+    left: 0; 
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.slide:hover .text{
+    opacity: 0.8;
+}
+
+.slide-show p{
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ border: 2px solid red;
+ width: 50px;
+ font-size: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ border-radius: 50%;
+ background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-show p:first-child{
+   right: 0;
+}
+.slide-show p:last-child{
+    right: 10px;
+}
+
+
+
 
 /* BREAK POINTS */
 @media (max-width:992px){
@@ -88,54 +87,22 @@ footer p{
         padding: 0 0 0 20px;
     }
 }
+
 @media (max-width:768px){
-
-/*** ******************
-    Navigation bar 
-******************* ***/
-    .icons{
-        display: inline-flex;
-    }
-    #check:checked~.icons #menu-icon{
-        display: none;
-    }
-    
-    .icons #close-icon{
-        display: none;
-    }
-    
-    #check:checked~.icons #close-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background-color: rgba(255,255,255,.1);
-        backdrop-filter: blur(50px);
-        transition: 0.3s ease;
-        overflow: hidden;
-    }
-    
-    #check:checked~.navbar{
-        height: 200px;
+    .upcoming-event p{
+        font-size: 20px;
+        margin-left: 20px;
     }
 
-    .navbar a{
-        display: block;
-        font-size: 1.1rem;
-        margin: 1.5rem 0;
-        text-align: center;
-        transform: translateY(-50px);
-        opacity: 0;
+    .slide-show{
+        width: 90%;
+        height: 300px;
     }
-    
-    #check:checked~.navbar a{
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: calc(.15s*var(--i));
+
+    .slide-show p{
+        font-size: 18px;
+        padding: 5px;
+        width: 28px;
     }
+
 }
-
