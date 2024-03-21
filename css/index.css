@@ -1,8 +1,26 @@
+/*** ******************
+    Main body
+******************* ***/
+.main{
+    margin: 50px 10% 0 10%;
+}
+.main h1{
+    padding: 30px 0 10px ;
+    background-image: linear-gradient(to right, #fc00ff, #00dbde);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
+.main p{
+    padding: 0 20px 0;
+    text-indent: 80px;
+}
 
 /*** ******************
         UPCOMING EVENTS
 ******************* ***/
+
 .upcoming-event {
     display: flex;
     justify-content: center;
@@ -10,10 +28,10 @@
     flex-direction: column;
 }
 
-.upcoming-event p{
+.upcoming-event h1{
     width: 85%;
-    margin: 0 0 20px 15%;
-    font-size: 30px;
+    color: #00FFFF;
+    margin: 15px 0 20px 10px;
 }
 
 .slide-show {
@@ -60,7 +78,6 @@
  position: absolute;
  top: 50%;
  transform: translateY(-50%);
- border: 2px solid red;
  width: 50px;
  font-size: 30px;
  display: flex;
@@ -78,7 +95,111 @@
     right: 10px;
 }
 
+/*** ******************
+    About us
+******************* ***/
+.about-us h1{
+    width: 80%;
+    color: #00FFFF;
+    margin: 40px 0 10px 10%;
+}
 
+.about-us p{
+    margin-left: 10%;
+    width: 80%;
+    text-indent: 60px;
+    color: #ADB2F5;
+    margin-bottom: 20px;
+}
+
+/*** ******************
+    CONTACT US
+******************* ***/
+.contact-us h1{
+    margin: 10px 0 0 10%;
+}
+
+.contact-us P{
+    margin: 20px 0 10px 14%;
+    color: #e38c28;
+    font-weight: 500;
+}
+.site-icons{
+    width: 60%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.site-icons i{
+    margin: 20px;
+}
+
+.insta:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80, #ffeb80, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linkedin:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #0077B5, #0077B5, #0077B5, #0077B5, #0077B5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.whatsapp:hover{
+    transform: scale(1.2);
+    background: linear-gradient(45deg, #25D366, #25D366, #25D366, #25D366, #25D366);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.additional{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.card{
+    width: 300px;
+    border-radius: 25px; 
+    background: linear-gradient(to right, black, #0b0a08);
+    border: 2px solid #201658;
+}
+
+.card h2{
+    margin: 20px;
+    text-align: center;
+    color: #ff0909;
+}
+
+.card p{
+    margin: 0 20px 5px ;
+    text-indent: 30px;
+}
+.card h4{
+    text-align: center;
+    margin: 15px 0;
+}
+h4 a{
+    padding: 8px 15px;
+    border-radius: 18px;
+}
+h4 a:hover{
+    background-color: #9a9696;
+}
+
+.card:hover{
+    scale: 1.02;
+    box-shadow: 0 0 8px 3px rgb(255,255,255,.5);
+}
 
 
 /* BREAK POINTS */
@@ -89,6 +210,14 @@
 }
 
 @media (max-width:768px){
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+
+    }
+
     .upcoming-event p{
         font-size: 20px;
         margin-left: 20px;
@@ -104,5 +233,4 @@
         padding: 5px;
         width: 28px;
     }
-
 }
