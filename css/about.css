@@ -8,7 +8,7 @@
   .box h1{
     width: 100%;
     text-align: left;
-    padding: 20px;
+    padding: 20px 0 20px 40px;
   }
   .faculty,.core-team,.junior-body{
     height: 100%;
@@ -50,6 +50,10 @@
 
 .card .info {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card p {
@@ -57,18 +61,6 @@
     margin: 5px 0;
 }
 
-.card a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    color: #007bff;
-    padding: 10px 20px;
-    border-top: 1px solid #f0f0f0;
-}
-
-.card a:hover {
-    background-color: #f0f0f0;
-}
 
 
   @media (max-width:768px){
