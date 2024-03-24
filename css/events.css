@@ -1,12 +1,18 @@
-.event-1{
-    padding-top: 30px;
+.past-event{
+  margin-top: 30px;
+}
+
+.past-event h1{
+  color: #00FFFF;
+}
+.event{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.event-1 h1{
+.event h1{
     margin-bottom: 20px;
     text-align: center;
 }

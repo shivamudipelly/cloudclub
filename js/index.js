@@ -1,8 +1,12 @@
 let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
+const slide = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slides');
 
 function showSlides() {
     slides.forEach(slide => {
+        slide.style.transform = `translateX(-${slideIndex * 100}%)`;
+    });
+    slide.forEach(slide => {
         slide.style.transform = `translateX(-${slideIndex * 100}%)`;
     });
 }
@@ -16,4 +20,4 @@ function nextSlide() {
     showSlides();
 }
 
-setInterval(nextSlide, 3000); // Automatically advance slides every 3 seconds
+setInterval(nextSlide, 3000);
