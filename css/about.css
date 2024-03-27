@@ -80,6 +80,20 @@
       width: 200px;
       height: 200px;
     }
+    .card .info{
+      padding: 0px 0px 10px 0;
+    }
+    .info p{
+      font-size: 13px;
+      text-align: center;
+    }
+    .img img {
+      width: 100px;
+      height: 100px;
+    }
+    .core-team .card:nth-child(7) img{
+      height: 125px;
+    }
     
     .card p{
         font-size: 18px;
