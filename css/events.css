@@ -59,12 +59,13 @@
     padding: 0 0 10px 0;
   }
 
-  h3{
+  h6{
     width: 200px;
     text-align: center;
     padding: 10px 20px;
     border-radius: 30px;
     background-color: #1279e0;
+    font-size: 20px;
 
   }
   .event ul li{
@@ -91,5 +92,16 @@
      .event p{
       margin: 10px 0;
       width: 100%;
+     }
+     .past-event{
+      justify-content: flex-start;
+      align-items: flex-start;
+      }
+      
+      .about-event{
+        width: 90vw;
+        padding: 10px;
+       position: relative;
+       left: -40px;
      }
   }
