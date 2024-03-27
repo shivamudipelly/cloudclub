@@ -44,3 +44,52 @@
     padding: 2px 4px;
     border-radius: 4px;
   }
+
+  .event{
+    border:  2px solid red;
+    width: 80%;
+    margin: 20px 10%;
+    padding: 20px;
+    /* background-color: #f0f0f0; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .events h1,.events h2,.events p,.events ul {
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+
+  h3{
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #1279e0;
+
+  }
+  .event ul li{
+    padding: 10px;
+  }
+  .event i{
+    padding-right: 5px;
+  }
+  .highlight {
+    color: #ff0000;
+  }
+
+  @media (max-width:768px){
+    .event{
+      width: 90%;
+      border: none;
+    }
+    .event ul li{
+      padding: 5px;
+     }
+     .event h1,.event h2,.event ul {
+      padding: 0;
+     }
+     .event p{
+      margin: 10px 0;
+      width: 100%;
+     }
+  }
